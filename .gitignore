@@ -9,7 +9,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-Bloganony/target/*
+target/*
 
 # External tool builders
 .externalToolBuilders/
