@@ -7,6 +7,9 @@
 	<packaging>war</packaging>
 	<name>Bloganony 2</name>
 	<description>Anonymous, user-contributed blog. This is a remake and revamp of my 2016 summer for-fun web project.</description>
+	<properties>
+		<spring.version>4.3.10.RELEASE</spring.version>
+	</properties>
 	<build>
 		<finalName>bloganony</finalName>
 		<sourceDirectory>src</sourceDirectory>
@@ -43,6 +46,31 @@
 			<groupId>org.apache.tomcat</groupId>
 			<artifactId>tomcat-servlet-api</artifactId>
 			<version>8.0.45</version>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>1.5.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+			<version>1.5.4.RELEASE</version>
 		</dependency>
 	</dependencies>
 </project>
