@@ -1,17 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description"
 	content="Anonymous blog where anyone can post anything.">
 <meta property="og:title" content="Bloganony">
+<meta property="og:type" content="website">
 <meta property="og:url" content="http://bloganony.com/">
-<meta property="og:description"
-	content="Anonymous blog where anyone can post anything.">
 <meta property="og:image"
 	content="http://localhost:8080/bloganony/img/screenie.png">
+<meta property="og:description"
+	content="Anonymous blog where anyone can post anything.">
 <meta name="keywords" content="blog,anonymous,yik yak">
 <meta name="author" content="Nick Handrick">
 <link href='https://fonts.googleapis.com/css?family=Roboto'
@@ -31,11 +32,9 @@
 			<a id="postButtonFull" onclick="showPostArea()"><img
 				src="img/post.png"></a>
 		</div>
-		<a onclick="showPostArea()">
-			<div id="postButtonMobile">
-				<p>Submit New Post</p>
-			</div>
-		</a>
+		<div id="postButtonMobile">
+			<a onclick="showPostArea()">Submit New Post</a>
+		</div>
 		<div id="postArea">
 			<button onclick="hidePostArea()" class="exitbtn">Cancel Post</button>
 			<h3>Title</h3>
