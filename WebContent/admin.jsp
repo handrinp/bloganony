@@ -18,7 +18,7 @@
 	<div id="wholePage">
 		<div id="editArea">
 			<h2>Edit JSON</h2>
-			<textarea id="editJson" wrap="off"></textarea>
+			<textarea id="editJson" wrap="soft"></textarea>
 			<button class="btn" onclick="editJson()">Update</button>
 		</div>
 		<div id="mainBody"></div>
