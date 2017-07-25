@@ -9,6 +9,7 @@
 	<description>Anonymous, user-contributed blog. This is a remake and revamp of my 2016 summer for-fun web project.</description>
 	<properties>
 		<spring.version>4.3.10.RELEASE</spring.version>
+		<springboot.version>1.5.4.RELEASE</springboot.version>
 	</properties>
 	<build>
 		<finalName>bloganony</finalName>
@@ -53,11 +54,6 @@
 			<version>1.2</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-			<version>1.5.4.RELEASE</version>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>${spring.version}</version>
@@ -69,8 +65,13 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>${springboot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-maven-plugin</artifactId>
-			<version>1.5.4.RELEASE</version>
+			<version>${springboot.version}</version>
 		</dependency>
 	</dependencies>
 </project>
